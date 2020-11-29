@@ -10,7 +10,7 @@ class Encoder
         $keyIdx = 0;
         for ($i = 0; $i < strlen($input); $i++)
         {
-            $output .= chr(ord($input{$i}) - self::$key[$keyIdx]);
+            $output .= chr(ord($input[$i]) - self::$key[$keyIdx]);
             $keyIdx++;
             if ($keyIdx == count(self::$key)) 
             {
