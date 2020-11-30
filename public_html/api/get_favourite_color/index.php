@@ -14,7 +14,7 @@ if (!getenv("WEBFEJLESZTES_BASE") || !getenv("WEBFEJLESZTES_CONFIG"))
     return;
 } 
 
-if (!$ini = @parse_ini_file(getenv("WEBFEJLESZTES_BASE") . "\\" . getenv("WEBFEJLESZTES_CONFIG"), true))
+if (!$ini = @parse_ini_file(getenv("WEBFEJLESZTES_BASE") . "/" . getenv("WEBFEJLESZTES_CONFIG"), true))
 {
     echo json_encode(array("error_code" => ErrorCodes::INTERNAL_ERROR), JSON_FORCE_OBJECT);
     return;
@@ -26,7 +26,7 @@ if (!isset($_POST["email"], $_POST["password"]))
     return;
 } 
 
-$pw_file = getenv("WEBFEJLESZTES_BASE") . "\\" . $ini["password"]["password_file"];
+$pw_file = getenv("WEBFEJLESZTES_BASE") . "/" . $ini["password"]["password_file"];
 
 if (!file_exists($pw_file))
 {
