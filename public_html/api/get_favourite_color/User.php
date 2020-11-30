@@ -2,8 +2,8 @@
 
 class User
 {   
-    public string $email;
-    private string $password;
+    public $email;
+    private $password;
 
     function __construct($encryptedData)
     {

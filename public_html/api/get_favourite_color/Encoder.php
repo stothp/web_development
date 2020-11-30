@@ -2,7 +2,7 @@
 
 class Encoder
 {
-    private static array $key = array(5,-14,31,-9,3);
+    private static $key = array(5,-14,31,-9,3);
 
     public static function decrypt(string $input)
     {

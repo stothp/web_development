@@ -2,7 +2,7 @@
 
 class UserList
 {
-    private array $users;
+    private $users;
 
     public const INVALID_USER = 1;
 

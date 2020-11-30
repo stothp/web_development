@@ -2,9 +2,9 @@
 
 class ColorQuery
 {
-    private string $host, $username, $password, $database, $port;
-    private ?string $color;
-    private static array $colorCodes = array(
+    private $host, $username, $password, $database, $port;
+    private $color;
+    private static $colorCodes = array(
         "piros" => "red",
         "zold" => "green",
         "sarga" => "yellow",
