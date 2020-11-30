@@ -20,14 +20,3 @@ Fill the e-mail address and password fields to chane the header's color to the u
 5. Set the following environmental variables (under Windows you can use the [startserver-debug.cmd](startserver-debug.cmd) script, and then skip this one):
     * `WEBFEJLESZTES_BASE` base directory of the project.
     * `WEBFEJLESZTES_CONFIG` the config file's path inside the base directory.
-
-## Data for testing
-
-| E-mail                    | Password  | Favourite color |
-|:--------------------------|:----------|:----------------|
-| katika@gmail.com          | katica85  | red             |
-| arpi40@freemail.hu        | polip     | green           |
-| zsanettka@hotmail.com     | csillag12 | yellow          |
-| hatizsak@protonmail.com   | tracking  | blue            |
-| terpeszterez@citromail.hu | cukorka   | black           |
-| nagysanyi@gmail.hu        | julcsika  | white           |
