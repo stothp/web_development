@@ -1,7 +1,7 @@
 function submitLogin(formElement) {
     $('.messageContainer').empty();
     $.ajax({
-        url: '/api/get_favourite_color',
+        url: '/api/get_favourite_color/',
         data: $(formElement).serialize(),
         cache: false,
         //      processData: false,
