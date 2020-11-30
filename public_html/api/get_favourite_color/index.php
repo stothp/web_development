@@ -54,7 +54,7 @@ if ($gc->getColor() == null)
 }
 
 $userList = new UserList($pw_file);
-if (!$user = $userList->get("terpeszterez@citromail.hu"))
+if (!$user = $userList->get($_POST["email"]))
 {
     echo json_encode(array("error_code" => ErrorCodes::INTERNAL_ERROR), JSON_FORCE_OBJECT);
     return;
