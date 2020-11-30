@@ -35,11 +35,10 @@ class ColorQuery
         $prep = $mysqli->prepare("SELECT Titkos FROM tabla WHERE Username=?");
         $prep->bind_param("s", $email);
         $prep->execute();
-        if ($prep->affected_rows > 0)
-        {
-            $prep->bind_result($titkos);
-            $prep->fetch();
 
+        $prep->bind_result($titkos);
+        if ($prep->fetch())
+        {
             if (!isset(self::$colorCodes[$titkos]))
             {
                 return false;
