@@ -4,7 +4,7 @@ Coursework for the course Web Development
 
 ## Overview
 
-Fill the e-mail address and password fields to chane the header's color to the user's favourite one. 
+Fill the e-mail address and password fields to change the header's color to the user's favourite one. 
 
 ## Features
 
